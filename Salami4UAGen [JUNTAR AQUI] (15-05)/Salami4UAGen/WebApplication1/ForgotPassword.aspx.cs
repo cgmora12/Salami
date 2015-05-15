@@ -15,6 +15,8 @@ namespace WebApplication1
 {
     public partial class ForgotPassword : System.Web.UI.Page
     {
+
+        private string admin = "admin";
         
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -75,6 +77,18 @@ namespace WebApplication1
                             smtpClient.Send(message);
 
                             usuario.AddValidation(Nickname.Text, password.ToString());
+
+                            try
+                            {
+                                string msg = Nickname.Text + " has requested to recover his password.";
+
+                                MensajesCEN mensajeCen = new MensajesCEN();
+                                mensajeCen.New_(msg, Nickname.Text, admin);
+
+                            }
+                            catch (Exception)
+                            {
+                            }
 
 
                         }
@@ -141,8 +155,10 @@ namespace WebApplication1
 
                         Description.Text = "";
                         Description2.Text = "";
-                        Description3.Text = "The new password has been set, please log in with the current password.";
+                        Description3.Text = "The new password has been set, enjoy with Salami4UA.";
                         ErrorValidacion.Text = "";
+
+                        // Email to the admin
                         SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
                         MailMessage message = new MailMessage();
                         try
@@ -151,11 +167,25 @@ namespace WebApplication1
                             user = usuario.DameUsuarioPorNickname(Nickname2.Text);
                             Salami4UAGenNHibernate.EN.Salami4UA.UsuarioEN usuario1 = user.ElementAt(0);
 
+
+                            // Message to the admin
+                            try
+                            {
+                                string msg = usuario1.Nickname + " has recovered his password.";
+
+                                MensajesCEN mensajeCen = new MensajesCEN();
+                                mensajeCen.New_(msg, usuario1.Nickname, admin);
+
+                            }
+                            catch (Exception)
+                            {
+                            }
+
                             MailAddress fromAddress = new MailAddress("salami4ua@gmail.com", "Salami4UA");
                             MailAddress toAddress = new MailAddress(u1.Email, Nickname2.Text);
                             message.From = fromAddress;
                             message.To.Add(toAddress);
-                            message.Subject = "Salami4ua";
+                            message.Subject = "Salami4UA - Change password";
                             message.Body = "Your password has been changed. Thank you for using Salami4UA as " + Nickname2.Text + ". \n\n " +
                                 "Please click the following link: \n http://localhost:49837/Account/Login.aspx" +
                                 "\n\n Regards, Salami4UA Team.";

@@ -300,7 +300,8 @@ namespace WebApplication1
                 string fumador = Fumador.SelectedValue;
                 List<UsuarioEN> listaPorFumador = new List<UsuarioEN>();
 
-                listaPorFumador.AddRange(UsuarioCEN.DameUsuarioPorFumar((SmokeEnum)Enum.Parse(typeof(SmokeEnum), fumador)));
+                listaPorFumador.AddRange(UsuarioCEN.DameUsuarioPorFumar(
+                    (SmokeEnum)Enum.Parse(typeof(SmokeEnum), fumador)));
 
                 listaUsuarios = filtraUsuariosNuevos(listaUsuarios, listaPorFumador);
             }

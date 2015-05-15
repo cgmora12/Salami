@@ -218,7 +218,7 @@ public System.Collections.Generic.IList<Salami4UAGenNHibernate.EN.Salami4UA.Usua
 {
         return _IUsuarioCAD.DameUsuarioPorCarrera (carrera);
 }
-public System.Collections.Generic.IList<Salami4UAGenNHibernate.EN.Salami4UA.UsuarioEN> DameUsuarioPorCurso (Salami4UAGenNHibernate.Enumerated.Salami4UA.CourseEnum curso)
+public System.Collections.Generic.IList<Salami4UAGenNHibernate.EN.Salami4UA.UsuarioEN> DameUsuarioPorCurso (string curso)
 {
         return _IUsuarioCAD.DameUsuarioPorCurso (curso);
 }

@@ -73,7 +73,6 @@ C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
 C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
 C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
-C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll

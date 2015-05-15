@@ -12,6 +12,8 @@ namespace WebApplication1.Account
 {
     public partial class ChangePassword : System.Web.UI.Page
     {
+        private string admin = "admin";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["Login"] != null)
@@ -47,6 +49,7 @@ namespace WebApplication1.Account
 
                     LoginOk.Text = "The password has been changed!";
 
+                    // Email to admin
                     SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
                     MailMessage message = new MailMessage();
                     try
@@ -55,12 +58,24 @@ namespace WebApplication1.Account
                         user = usuario.DameUsuarioPorNickname(Username.Text);
                         Salami4UAGenNHibernate.EN.Salami4UA.UsuarioEN usuario1 = user.ElementAt(0);
                         
+                        // Message to admin
+                        try
+                        {
+                            string msg = usuario1.Nickname + " has changed his password.";
+
+                            MensajesCEN mensajeCen = new MensajesCEN();
+                            mensajeCen.New_(msg, usuario1.Nickname, admin);
+
+                        }
+                        catch (Exception)
+                        {
+                        }
 
                         MailAddress fromAddress = new MailAddress("salami4ua@gmail.com", "Salami4UA");
                         MailAddress toAddress = new MailAddress(usuario1.Email, Username.Text);
                         message.From = fromAddress;
                         message.To.Add(toAddress);
-                        message.Subject = "Salami4ua - Change password";
+                        message.Subject = "Salami4UA - Change password";
                         message.Body = "Your password has been changed. Thank you for using Salami4UA as " + Username.Text + ". \n\n " +
                             "Please click the following link: \n http://localhost:49837/Account/Login.aspx"+
                             "\n\n Regards, Salami4UA Team.";

@@ -19,7 +19,7 @@
         <br />
     <div style= 'border-style: none; border-color: inherit; border-width: 3px; height: 250px; width: 226px; float: left; margin-top: 3px; margin-bottom: 3px'>
         
-        <asp:Image ID="ImagenPerfil" runat="server" Height="200px" Width="200px" />
+        <asp:ImageButton ID="ImagenPerfilButton" runat="server" Height="200px" Width="200px" />
         
     </div>
     
@@ -48,9 +48,10 @@
     
         <asp:Label ID="LabelReport" runat="server" ForeColor="Red" /><br />
 
-        <asp:TextBox ID="textSend" runat="server" Width="500px" class="input"  />
-        <asp:Button ID="buttonSend" runat="server" Text="Send" class="button" OnClick="sendMessage_Click"/>
-        
+        <asp:Panel ID="Panel1" runat="server" DefaultButton="buttonSend">
+            <asp:TextBox ID="textSend" runat="server" Width="500px" class="input"  />
+            <asp:Button ID="buttonSend" runat="server" Text="Send" class="button" OnClick="sendMessage_Click"/>
+        </asp:Panel>
     </div>
 
     <% } %>

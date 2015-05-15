@@ -15,6 +15,7 @@ namespace WebApplication1.Account
 {
     public partial class Register : System.Web.UI.Page
     {
+        private string admin = "admin";
         protected void InicializarValores()
         {
             if (botoncarrera.Checked == true) // Estudia carrera
@@ -360,6 +361,7 @@ namespace WebApplication1.Account
                 smtpClient.Credentials = new System.Net.NetworkCredential("salami4ua@gmail.com", "salamiforua");
 
 
+
                 UsuarioCEN usuario = new UsuarioCEN();
 
 
@@ -544,7 +546,7 @@ namespace WebApplication1.Account
 
 
                     usuario.New_(UserName.Text, Login.GetMd5Hash(password.ToString()), hairColor, eyeColor, hairLength, hairStyle, bodyType, ethnicity, religion, smoke, Email.Text,
-                        tiempo, genero, orientacion, Name.Text, Surname.Text, Comment.Text, "", CareerList.SelectedValue, curso,
+                        tiempo, genero, orientacion, Name.Text, Surname.Text, Comment.Text, "NotValidated", CareerList.SelectedValue, curso,
                         NacionalidadList.SelectedValue, Int32.Parse(Height.SelectedValue), animales, cines, musicas, caracteristicas, deportes, hobbies, "http://10hotmail.com/wp-content/uploads/2012/05/Agregar-contactos-Yahoo-MSN-Messenger.png", UserName.Text);
                         
 
@@ -554,6 +556,18 @@ namespace WebApplication1.Account
                         "<a href=\"https://www1.webmail.ua.es/login0.php3?idi=es\" target=\"_blank\"> WebMail  </a>" +
                         "\nPlease log in <a href=\"/Account/Login.aspx\">here</a>." +
                         "\n\n Regards, Salami4UA Team.";
+
+                    try
+                    {
+                        string msg = UserName.Text + " has created his new account without validation.";
+
+                        MensajesCEN mensajeCen = new MensajesCEN();
+                        mensajeCen.New_(msg, UserName.Text, admin);
+
+                    }
+                    catch (Exception)
+                    {
+                    }
 
                 }
                 else

@@ -17,13 +17,11 @@ namespace WebApplication1
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-
             if (Session["Login"] != null)
             {
                 //String nick = Session["Login"].ToString();
                 nick = HttpContext.Current.Request.QueryString.Get("msgTo");
-
+                
 
                 try
                 {
@@ -41,7 +39,8 @@ namespace WebApplication1
                         UsuarioEN userDst = usuarios[0];
                         {
                             string logedUser = (string)Session["Login"];
-                            ImagenPerfil.ImageUrl = userDst.UrlFoto;
+                            ImagenPerfilButton.ImageUrl = userDst.UrlFoto;
+                            ImagenPerfilButton.PostBackUrl = "~/VerPerfil.aspx/" + userDst.Nickname;
                             MensajesCEN cen = new MensajesCEN();
                             IList<MensajesEN> mensajes, enviados;
 
@@ -59,7 +58,25 @@ namespace WebApplication1
                             {
                                 foreach (MensajesEN m in mensajes)
                                 {
-                                    addMessage(enviados.Contains(m), m.Message);
+                                    String text = m.Message, aux;
+                                    int tam = 80;
+
+                                    for (int i = 0; i < text.Length; i += tam)
+                                    {
+                                        aux = text.Substring(i);
+                                        if (aux.Length > tam)
+                                        {
+                                            try
+                                            {
+                                                addMessage(enviados.Contains(m), aux.Substring(0, tam));
+                                                //addMessage(enviados.Contains(m), text.Substring(tam));
+                                            }
+                                            catch (Exception) { }
+                                        }
+                                        else
+                                            addMessage(enviados.Contains(m), aux);
+                                    }
+                                    
                                 }
                             }
                         }
@@ -87,6 +104,7 @@ namespace WebApplication1
             l.Style.Add("-moz-border-radius", "15px 15px 15px 15px");
             l.Style.Add("border-radius", "15px 15px 15px 15px");
             l.Style.Add("padding", "0px 5px 0px 5px");
+            l.Style.Add("margin-bottom", "3px");
 
             if (send)
             {
@@ -109,10 +127,10 @@ namespace WebApplication1
 
         protected void sendMessage_Click(object sender, EventArgs e)
         {
-
+            string msg = "";
             try
             {
-                string msg = textSend.Text;
+                msg = textSend.Text;
                 string user = (string)Session["login"];
                 MensajesCEN mensajeCen = new MensajesCEN();
 
@@ -127,7 +145,8 @@ namespace WebApplication1
             }
             catch (Exception)
             {
-                LabelReport.Text = "Error sending the message";
+                LabelReport.Text = "Error sending the message, the message is too long.";
+                textSend.Text = msg;
             }
         }
 

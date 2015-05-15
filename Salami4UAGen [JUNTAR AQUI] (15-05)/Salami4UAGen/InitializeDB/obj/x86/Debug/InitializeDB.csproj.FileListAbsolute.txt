@@ -112,7 +112,6 @@ C:\Users\david\Desktop\Salami4UAGen\InitializeDB\bin\Debug\Salami4UAGenNHibernat
 C:\Users\david\Desktop\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.csprojResolveAssemblyReference.cache
 C:\Users\david\Desktop\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
 C:\Users\david\Desktop\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb
-C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.csprojResolveAssemblyReference.cache
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\hibernate.cfg.xml
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\InitializeDB.exe.config
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\InitializeDB.exe
@@ -129,5 +128,6 @@ C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\nunit.framework.dll
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\Salami4UAGenNHibernate.dll
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.csprojResolveAssemblyReference.cache
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.exe
 C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\InitializeDB\obj\x86\Debug\InitializeDB.pdb

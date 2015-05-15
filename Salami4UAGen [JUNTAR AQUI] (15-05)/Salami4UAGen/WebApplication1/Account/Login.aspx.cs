@@ -67,7 +67,24 @@ namespace WebApplication1.Account
 
                     }catch(Exception){}
 
+                    //Check if it is a new user
+                    try
+                    {
+                        IList<UsuarioEN> usu = usuario.DameUsuarioPorNickname(LoginUser.UserName);
 
+                        UsuarioEN u = usu.ElementAt(0);
+                        if (String.Compare(u.ValidationCode , "NotValidated") == 0)
+                        {
+                            usuario.AddValidation(u.Nickname, "");
+                            string msg = u.Nickname + " has validated his account.";
+
+                            MensajesCEN mensajeCen = new MensajesCEN();
+                            mensajeCen.New_(msg, u.Nickname, admin);
+                        }
+
+
+                    }
+                    catch (Exception) { }
                     
                     ErrorValidacion.Text = "";
                     Session["login"] = LoginUser.UserName;

@@ -221,10 +221,5 @@ namespace WebApplication1
         {
             Response.Redirect("~/EliminarPerfil.aspx");
         }
-
-        protected void ButtonVerMensajes_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/VerMensajesDesdePerfil.aspx");
-        }
     }
 }

@@ -94,7 +94,6 @@
     <Content Include="Scripts\jquery-1.4.1.js" />
     <Content Include="Scripts\jquery-1.4.1.min.js" />
     <Content Include="Terms.aspx" />
-    <Content Include="VerMensajesDesdePerfil.aspx" />
     <Content Include="VerPerfil.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -220,13 +219,6 @@
     </Compile>
     <Compile Include="Terms.aspx.designer.cs">
       <DependentUpon>Terms.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="VerMensajesDesdePerfil.aspx.cs">
-      <DependentUpon>VerMensajesDesdePerfil.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="VerMensajesDesdePerfil.aspx.designer.cs">
-      <DependentUpon>VerMensajesDesdePerfil.aspx</DependentUpon>
     </Compile>
     <Compile Include="VerPerfil.aspx.cs">
       <DependentUpon>VerPerfil.aspx</DependentUpon>

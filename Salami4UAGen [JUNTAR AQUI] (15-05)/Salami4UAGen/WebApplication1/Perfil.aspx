@@ -10,9 +10,6 @@
     <br /><br />
     <div style= 'border-style: none; border-color: inherit; border-width: 3px; height: 800px; width: 226px; float: left'>
         <asp:Image ID="ImagenPerfil" runat="server" Height="200px" Width="200px" />
-        <br /><br />
-        <asp:Button ID="ButtonVerMensajes" runat="server" Text="Show Messages" OnClick="ButtonVerMensajes_Click" class="button" Width="200px"/>
-        
     </div>
 
     <div style= 'border-style: none; border-color: inherit; border-width: 3px; height: 1400px; width: 359px; float: left; line-height: 2em;' >

@@ -227,7 +227,21 @@ namespace WebApplication1
 
             String nick = HttpContext.Current.Request.Url.AbsolutePath.Replace("/VerPerfil.aspx/", "");
 
-            // Message to salami4ua@gmail.com
+            // Message and email to admin
+            try
+            {
+                string user = (string)Session["login"];
+                string msg = NicknameReport.Text + " has been reported by " + user + " because of " +
+                    CauseDropDownList.SelectedItem.Text.ToLower();
+
+                MensajesCEN mensajeCen = new MensajesCEN();
+                mensajeCen.New_(msg, nick, admin);
+
+            }
+            catch (Exception)
+            {
+                LabelReport.Text = "Error sending the message!";
+            }
             
             try
             {
