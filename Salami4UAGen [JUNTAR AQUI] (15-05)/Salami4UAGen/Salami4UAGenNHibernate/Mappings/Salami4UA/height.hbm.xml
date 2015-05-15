@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="HeightEN" table="[Height]">
+						<id name="Height" column="[value]"/>
+			
+					
+		
+		  </class>
+		  
+		  <query name="HeightENReadAllHQL">from HeightEN</query>
+		  <query name="HeightENdameTodaslasAlturasHQL"><![CDATA[FROM HeightEN]]></query>
+		</hibernate-mapping>
+	

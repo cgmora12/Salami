@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="GustosEN" table="[Gustos]">
+						<id name="Nickname" column="[ID]"/>
+					<property name="HairColor" > 
+						<column name="[HairColor]"  not-null="true"/>
+					</property>
+					<property name="EyeColor" > 
+						<column name="[EyeColor]"  not-null="true"/>
+					</property>
+					<property name="HairLength" > 
+						<column name="[HairLength]"  not-null="true"/>
+					</property>
+					<property name="HairStyle" > 
+						<column name="[HairStyle]"  not-null="true"/>
+					</property>
+					<property name="BodyType" > 
+						<column name="[BodyType]"  not-null="true"/>
+					</property>
+					<property name="Ethnicity" > 
+						<column name="[Ethnicity]"  not-null="true"/>
+					</property>
+					<property name="Smoke" > 
+						<column name="[Smoke]"  not-null="true"/>
+					</property>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+					
+							   <one-to-one name="Usuario" class="Salami4UAGenNHibernate.EN.Salami4UA.UsuarioEN" property-ref="Gustos" />							
+					 
+						
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="GustosENReadAllHQL">from GustosEN</query>
+		</hibernate-mapping>
+	

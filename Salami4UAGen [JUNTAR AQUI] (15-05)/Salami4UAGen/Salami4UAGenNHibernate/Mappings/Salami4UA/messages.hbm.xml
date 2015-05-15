@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="MessagesEN" table="[Messages]">
+				  	
+						<id name="Id" column="[Id]" type="integer">
+							<generator class="identity"/>
+						</id>
+					<property name="Message" type="string"> 
+						<column name="[Message]"  not-null="true"/>
+					</property>
+			
+			
+			
+		  			
+						<many-to-one name="UserOrigen" class="Salami4UAGenNHibernate.EN.Salami4UA.UserEN" >	
+								<column name="[FK_Nickname_idUser]"/>
+						</many-to-one>
+											 					
+			
+		  			
+						<many-to-one name="UserDestino" class="Salami4UAGenNHibernate.EN.Salami4UA.UserEN" >	
+								<column name="[FK_Nickname_idUser]"/>
+						</many-to-one>
+											 					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="MessagesENReadAllHQL">from MessagesEN</query>
+		  <query name="MessagesENdameTodosLosMensajesEnviadosPorUsuarioHQL"><![CDATA[FROM MessagesEN m WHERE m.UserOrigen.Nickname = :nick]]></query>
+		  <query name="MessagesENdameTodosLosMensajesRecibidosPorUsuarioHQL"><![CDATA[FROM MessagesEN m WHERE m.UserDestino.Nickname = :nick]]></query>
+		  <query name="MessagesENdameTodosLosMensajesEntreUsuariosHQL"><![CDATA[FROM MessagesEN m WHERE m.UserOrigen.Nickname = :nickOrigen AND m.UserDestino.Nickname = :nickDestino]]></query>
+		</hibernate-mapping>
+	

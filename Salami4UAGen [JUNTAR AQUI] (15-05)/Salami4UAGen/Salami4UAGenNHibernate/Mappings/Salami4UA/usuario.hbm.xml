@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="UsuarioEN" table="[Usuario]">
+						<id name="Nickname" column="[Nickname]"/>
+					<property name="Password" type="string"> 
+						<column name="[Password]"  not-null="true"/>
+					</property>
+					<property name="HairColor" > 
+						<column name="[HairColor]"  not-null="true"/>
+					</property>
+					<property name="EyeColor" > 
+						<column name="[EyeColor]"  not-null="true"/>
+					</property>
+					<property name="HairLength" > 
+						<column name="[HairLength]"  not-null="true"/>
+					</property>
+					<property name="HairStyle" > 
+						<column name="[HairStyle]"  not-null="true"/>
+					</property>
+					<property name="BodyType" > 
+						<column name="[BodyType]"  not-null="true"/>
+					</property>
+					<property name="Ethnicity" > 
+						<column name="[Ethnicity]"  not-null="true"/>
+					</property>
+					<property name="Religion" > 
+						<column name="[Religion]"  not-null="true"/>
+					</property>
+					<property name="Smoke" > 
+						<column name="[Smoke]"  not-null="true"/>
+					</property>
+					<property name="Email" type="string"> 
+						<column name="[email]"  not-null="true"/>
+					</property>
+					<property name="Birthday" type="date"> 
+						<column name="[Birthday]"  not-null="true"/>
+					</property>
+					<property name="Gender" > 
+						<column name="[Gender]"  not-null="true"/>
+					</property>
+					<property name="Likes" > 
+						<column name="[Likes]"  not-null="true"/>
+					</property>
+					<property name="Name" type="string"> 
+						<column name="[Name]"  not-null="true"/>
+					</property>
+					<property name="Surname" type="string"> 
+						<column name="[Surname]"  not-null="true"/>
+					</property>
+					<property name="Comment" type="string"> 
+						<column name="[Comment]" length="1000" not-null="true"/>
+					</property>
+					<property name="ValidationCode" type="string"> 
+						<column name="[ValidationCode]"  not-null="true"/>
+					</property>
+					<property name="Career" type="string"> 
+						<column name="[Career]"  not-null="true"/>
+					</property>
+					<property name="Course" > 
+						<column name="[Course]"  not-null="true"/>
+					</property>
+					<property name="Nationality" type="string"> 
+						<column name="[Nationality]"  not-null="true"/>
+					</property>
+					<property name="Height" type="integer"> 
+						<column name="[Height]"  not-null="true"/>
+					</property>
+					<bag name="Pets" table="[Pets]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Pets]" type="string"/>
+    				</bag>
+					<bag name="Films" table="[Films]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Films]" type="string"/>
+    				</bag>
+					<bag name="Musics" table="[Musics]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Musics]" type="string"/>
+    				</bag>
+					<bag name="Characteristics" table="[Characteristics]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Characteristics]" type="string"/>
+    				</bag>
+					<bag name="Sports" table="[Sports]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Sports]" type="string"/>
+    				</bag>
+					<bag name="Hobbies" table="[Hobbies]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Hobbies]" type="string"/>
+    				</bag>
+					<property name="UrlFoto" type="string"> 
+						<column name="[UrlFoto]"  not-null="true"/>
+					</property>
+					<bag name="PinchitosRecibidos" table="[PinchitosRecibidos]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[PinchitosRecibidos]" type="string"/>
+    				</bag>
+					<bag name="MensajesRecibidos" table="[MensajesRecibidos]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[MensajesRecibidos]" type="string"/>
+    				</bag>
+					<bag name="PersonasQueTeHanBloqueado" table="[PersonasQueTeHanBloqueado]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[PersonasQueTeHanBloqueado]" type="string"/>
+    				</bag>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+					
+							<many-to-one name="Gustos" class="Salami4UAGenNHibernate.EN.Salami4UA.GustosEN" >
+								<column name="[FK_ID_idGustos]"/>
+        					</many-to-one>
+					 
+						
+			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="UsuarioENReadAllHQL">from UsuarioEN</query>
+		  <query name="UsuarioENdameUsuarioPorEmailHQL"><![CDATA[FROM UsuarioEN c WHERE c.Email = :mail]]></query>
+		  <query name="UsuarioENdameUsuarioPorNicknameHQL"><![CDATA[FROM UsuarioEN c WHERE c.Nickname = :nombre]]></query>
+		  <query name="UsuarioENdameTodosLosUsuariosHQL"><![CDATA[FROM UsuarioEN]]></query>
+		  <query name="UsuarioENdameUsuarioPorBodyTypeHQL"><![CDATA[FROM UsuarioEN c WHERE c.BodyType = :bodyType]]></query>
+		  <query name="UsuarioENdameUsuarioPorEthnicityHQL"><![CDATA[FROM UsuarioEN c WHERE c.Ethnicity = :etnia]]></query>
+		  <query name="UsuarioENdameUsuarioPorEyeColorHQL"><![CDATA[FROM UsuarioEN c WHERE c.EyeColor = :color]]></query>
+		  <query name="UsuarioENdameUsuarioPorHairColorHQL"><![CDATA[FROM UsuarioEN c WHERE c.HairColor = :color]]></query>
+		  <query name="UsuarioENdameUsuarioPorHairLengthHQL"><![CDATA[FROM UsuarioEN c WHERE c.HairLength = :tamanyo]]></query>
+		  <query name="UsuarioENdameUsuarioPorHairStyleHQL"><![CDATA[FROM UsuarioEN c WHERE c.HairStyle = :estilo]]></query>
+		  <query name="UsuarioENdameUsuarioPorReligionHQL"><![CDATA[FROM UsuarioEN c WHERE c.Religion = :religion]]></query>
+		  <query name="UsuarioENdameUsuarioPorFumarHQL"><![CDATA[FROM UsuarioEN c WHERE c.Smoke = :fumar]]></query>
+		  <query name="UsuarioENdameUsuarioPorGenderHQL"><![CDATA[FROM UsuarioEN c WHERE c.Gender = :genero]]></query>
+		  <query name="UsuarioENdameUsuarioPorNacionalidadHQL"><![CDATA[FROM UsuarioEN c WHERE c.Nationality = :nacionalidad]]></query>
+		  <query name="UsuarioENdameUsuarioPorAlturaHQL"><![CDATA[FROM UsuarioEN c WHERE c.Height = :altura]]></query>
+		  <query name="UsuarioENdameUsuarioPorRangoEdadHQL"><![CDATA[FROM UsuarioEN c WHERE year(c.Birthday) < :min AND year(c.Birthday) > :max]]></query>
+		  <query name="UsuarioENdameUsuarioPorCarreraHQL"><![CDATA[FROM UsuarioEN c WHERE c.Career = :carrera]]></query>
+		  <query name="UsuarioENdameUsuarioPorCursoHQL"><![CDATA[FROM UsuarioEN c WHERE c.Course = :curso]]></query>
+		</hibernate-mapping>
+	

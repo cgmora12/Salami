@@ -1,0 +1,90 @@
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+C:\Users\Alberto\Desktop\Proyecto DSS\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen [JUNTADO] (19-09)\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+D:\Datos\UA\3\2do cuatrimestre\DSS\Practicas\workspace\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+C:\Users\LUIS\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+C:\Users\david\Desktop\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.csprojResolveAssemblyReference.cache
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\hibernate.cfg.xml
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll.config
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Salami4UAGenNHibernate.pdb
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Castle.DynamicProxy2.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\LinFu.DynamicProxy.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.Castle.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.ByteCode.LinFu.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\NHibernate.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Iesi.Collections.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\Antlr3.Runtime.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\bin\Debug\log4net.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.dll
+C:\Users\Alberto\Documents\Workspace OOH4RIA\Salami4UAGen\Salami4UAGenNHibernate\obj\Debug\Salami4UAGenNHibernate.pdb

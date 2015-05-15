@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="UserEN" table="[User]">
+						<id name="Nickname" column="[Nickname]"/>
+					<property name="Password" type="string"> 
+						<column name="[Password]"  not-null="true"/>
+					</property>
+					<property name="HairColor" > 
+						<column name="[HairColor]"  not-null="true"/>
+					</property>
+					<property name="EyeColor" > 
+						<column name="[EyeColor]"  not-null="true"/>
+					</property>
+					<property name="HairLength" > 
+						<column name="[HairLength]"  not-null="true"/>
+					</property>
+					<property name="HairStyle" > 
+						<column name="[HairStyle]"  not-null="true"/>
+					</property>
+					<property name="BodyType" > 
+						<column name="[BodyType]"  not-null="true"/>
+					</property>
+					<property name="Ethnicity" > 
+						<column name="[Ethnicity]"  not-null="true"/>
+					</property>
+					<property name="Religion" > 
+						<column name="[Religion]"  not-null="true"/>
+					</property>
+					<property name="Smoke" > 
+						<column name="[Smoke]"  not-null="true"/>
+					</property>
+					<property name="Email" type="string"> 
+						<column name="[email]"  not-null="true"/>
+					</property>
+					<property name="Birthday" type="date"> 
+						<column name="[Birthday]"  not-null="true"/>
+					</property>
+					<property name="Gender" > 
+						<column name="[Gender]"  not-null="true"/>
+					</property>
+					<property name="Likes" > 
+						<column name="[Likes]"  not-null="true"/>
+					</property>
+					<property name="Name" type="string"> 
+						<column name="[Name]"  not-null="true"/>
+					</property>
+					<property name="Surname" type="string"> 
+						<column name="[Surname]"  not-null="true"/>
+					</property>
+					<property name="Comment" type="string"> 
+						<column name="[Comment]" length="1000" not-null="true"/>
+					</property>
+					<property name="ValidationCode" type="string"> 
+						<column name="[ValidationCode]"  not-null="true"/>
+					</property>
+					<property name="Career" type="string"> 
+						<column name="[Career]"  not-null="true"/>
+					</property>
+					<property name="Course" > 
+						<column name="[Course]"  not-null="true"/>
+					</property>
+					<property name="Nationality" type="string"> 
+						<column name="[Nationality]"  not-null="true"/>
+					</property>
+					<property name="Height" type="integer"> 
+						<column name="[Height]"  not-null="true"/>
+					</property>
+					<bag name="Pets" table="[Pets]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Pets]" type="string"/>
+    				</bag>
+					<bag name="Films" table="[Films]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Films]" type="string"/>
+    				</bag>
+					<bag name="Musics" table="[Musics]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Musics]" type="string"/>
+    				</bag>
+					<bag name="Characteristics" table="[Characteristics]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Characteristics]" type="string"/>
+    				</bag>
+					<bag name="Sports" table="[Sports]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Sports]" type="string"/>
+    				</bag>
+					<bag name="Hobbies" table="[Hobbies]">
+						<key>
+							<column name="[Nickname]"/>
+						</key>
+						<element column="[Hobbies]" type="string"/>
+    				</bag>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+		  			
+						<bag name="MessagesEnviados" >
+							<key>
+								<column name="[FK_Nickname_idUser]"/>
+					      	</key>
+							<one-to-many class="Salami4UAGenNHibernate.EN.Salami4UA.MessagesEN"/>
+					    </bag>
+					
+			
+		  			
+						<bag name="MessagesRecibidos" >
+							<key>
+								<column name="[FK_Nickname_idUser]"/>
+					      	</key>
+							<one-to-many class="Salami4UAGenNHibernate.EN.Salami4UA.MessagesEN"/>
+					    </bag>
+					
+			
+			
+			
+			
+			
+			
+			
+			
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					
+		
+		  </class>
+		  
+		  <query name="UserENReadAllHQL">from UserEN</query>
+		  <query name="UserENdameUsuarioPorEmailHQL"><![CDATA[FROM UserEN c WHERE c.Email = :mail]]></query>
+		  <query name="UserENdameUsuarioPorNicknameHQL"><![CDATA[FROM UserEN c WHERE c.Nickname = :nombre]]></query>
+		  <query name="UserENdameTodosLosUsuariosHQL"><![CDATA[FROM UserEN]]></query>
+		  <query name="UserENdameUsuarioPorBodyTypeHQL"><![CDATA[FROM UserEN c WHERE c.BodyType = :bodyType]]></query>
+		  <query name="UserENdameUsuarioPorEthnicityHQL"><![CDATA[FROM UserEN c WHERE c.Ethnicity = :etnia]]></query>
+		  <query name="UserENdameUsuarioPorEyeColorHQL"><![CDATA[FROM UserEN c WHERE c.EyeColor = :color]]></query>
+		  <query name="UserENdameUsuarioPorHairColorHQL"><![CDATA[FROM UserEN c WHERE c.HairColor = :color]]></query>
+		  <query name="UserENdameUsuarioPorHairLengthHQL"><![CDATA[FROM UserEN c WHERE c.HairLength = :tamanyo]]></query>
+		  <query name="UserENdameUsuarioPorHairStyleHQL"><![CDATA[FROM UserEN c WHERE c.HairStyle = :estilo]]></query>
+		  <query name="UserENdameUsuarioPorReligionHQL"><![CDATA[FROM UserEN c WHERE c.Religion = :religion]]></query>
+		  <query name="UserENdameUsuarioPorFumarHQL"><![CDATA[FROM UserEN c WHERE c.Smoke = :fumar]]></query>
+		  <query name="UserENdameUsuarioPorGenderHQL"><![CDATA[FROM UserEN c WHERE c.Gender = :genero]]></query>
+		  <query name="UserENdameUsuarioPorNacionalidadHQL"><![CDATA[FROM UserEN c WHERE c.Nationality = :nacionalidad]]></query>
+		  <query name="UserENdameUsuarioPorAlturaHQL"><![CDATA[FROM UserEN c WHERE c.Height = :altura]]></query>
+		  <query name="UserENdameUsuarioPorRangoEdadHQL"><![CDATA[FROM UserEN c WHERE year(c.Birthday) < :min AND year(c.Birthday) > :max]]></query>
+		</hibernate-mapping>
+	

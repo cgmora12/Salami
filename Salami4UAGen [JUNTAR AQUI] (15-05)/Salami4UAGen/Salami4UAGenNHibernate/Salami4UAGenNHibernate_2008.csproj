@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+		<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		  <PropertyGroup>
+		    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+		    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+		    <ProductVersion>9.0.30729</ProductVersion>
+		    <SchemaVersion>2.0</SchemaVersion>
+		    <ProjectGuid>{66C66636-FD6A-4A3F-A7C5-FE88BBA117AF}</ProjectGuid>
+		    <OutputType>Library</OutputType>
+		    <AppDesignerFolder>Properties</AppDesignerFolder>
+		    <RootNamespace>Salami4UAGenNHibernate</RootNamespace>
+		    <AssemblyName>Salami4UAGenNHibernate</AssemblyName>
+		    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+		    <FileAlignment>512</FileAlignment>
+		    <PublishUrl>publish\</PublishUrl>
+		    <Install>true</Install>
+		    <InstallFrom>Disk</InstallFrom>
+		    <UpdateEnabled>false</UpdateEnabled>
+		    <UpdateMode>Foreground</UpdateMode>
+		    <UpdateInterval>7</UpdateInterval>
+		    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+		    <UpdatePeriodically>false</UpdatePeriodically>
+		    <UpdateRequired>false</UpdateRequired>
+		    <MapFileExtensions>true</MapFileExtensions>
+		    <ApplicationRevision>0</ApplicationRevision>
+		    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+		    <IsWebBootstrapper>false</IsWebBootstrapper>
+		    <UseApplicationTrust>false</UseApplicationTrust>
+		    <BootstrapperEnabled>true</BootstrapperEnabled>
+		  </PropertyGroup>
+		  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+		    <DebugSymbols>true</DebugSymbols>
+		    <DebugType>full</DebugType>
+		    <Optimize>false</Optimize>
+		    <OutputPath>bin\Debug\</OutputPath>
+		    <DefineConstants>DEBUG;TRACE</DefineConstants>
+		    <ErrorReport>prompt</ErrorReport>
+		    <WarningLevel>4</WarningLevel>
+		  </PropertyGroup>
+		  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+		    <DebugType>pdbonly</DebugType>
+		    <Optimize>true</Optimize>
+		    <OutputPath>bin\Release\</OutputPath>
+		    <DefineConstants>TRACE</DefineConstants>
+		    <ErrorReport>prompt</ErrorReport>
+		    <WarningLevel>4</WarningLevel>
+		  </PropertyGroup>
+<ItemGroup>
+    <Reference Include="Castle.DynamicProxy2, Version=2.1.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\Castle.DynamicProxy2.dll</HintPath>
+    </Reference>
+    <Reference Include="LinFu.DynamicProxy, Version=1.0.3.14911, Culture=neutral, PublicKeyToken=62a6874124340d6e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\LinFu.DynamicProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.Castle, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.ByteCode.Castle.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate.ByteCode.LinFu, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>AppLib\NHibernate.ByteCode.LinFu.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.1.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+		  <ItemGroup>
+		    <Compile Include="NHibernateHelper.cs" />
+		    <Compile Include="Exceptions\ModelException.cs"/>
+		    <Compile Include="Exceptions\DataLayerException.cs"/>
+		    
+	
+	<Compile Include="CAD\BasicCAD.cs"/>
+	
+	<Compile Include="EN\Salami4UA\UsuarioEN.cs" />
+	<Compile Include="CEN\Salami4UA\UsuarioCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IUsuarioCAD.cs" />
+	<Compile Include="CAD\Salami4UA\UsuarioCAD.cs" />
+			<Compile Include="CEN\Salami4UA\UsuarioCEN_ValidationUser.cs" />
+			<Compile Include="CEN\Salami4UA\UsuarioCEN_CambiarPassword.cs" />
+			<Compile Include="CEN\Salami4UA\UsuarioCEN_AddValidation.cs" />
+	<Compile Include="EN\Salami4UA\AficionesEN.cs" />
+	<Compile Include="CEN\Salami4UA\AficionesCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IAficionesCAD.cs" />
+	<Compile Include="CAD\Salami4UA\AficionesCAD.cs" />
+			<Compile Include="CEN\Salami4UA\AficionesCEN_DameHobbiesPorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\DeportesEN.cs" />
+	<Compile Include="CEN\Salami4UA\DeportesCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IDeportesCAD.cs" />
+	<Compile Include="CAD\Salami4UA\DeportesCAD.cs" />
+			<Compile Include="CEN\Salami4UA\DeportesCEN_DameDeportesPorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\MusicasEN.cs" />
+	<Compile Include="CEN\Salami4UA\MusicasCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IMusicasCAD.cs" />
+	<Compile Include="CAD\Salami4UA\MusicasCAD.cs" />
+			<Compile Include="CEN\Salami4UA\MusicasCEN_DameGustosMusicalesPorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\CinesEN.cs" />
+	<Compile Include="CEN\Salami4UA\CinesCEN.cs" />
+	<Compile Include="CAD\Salami4UA\ICinesCAD.cs" />
+	<Compile Include="CAD\Salami4UA\CinesCAD.cs" />
+			<Compile Include="CEN\Salami4UA\CinesCEN_DameGenerosDeCinePorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\CaracteristicasEN.cs" />
+	<Compile Include="CEN\Salami4UA\CaracteristicasCEN.cs" />
+	<Compile Include="CAD\Salami4UA\ICaracteristicasCAD.cs" />
+	<Compile Include="CAD\Salami4UA\CaracteristicasCAD.cs" />
+			<Compile Include="CEN\Salami4UA\CaracteristicasCEN_DameCaracteristicasPorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\NacionalidadEN.cs" />
+	<Compile Include="CEN\Salami4UA\NacionalidadCEN.cs" />
+	<Compile Include="CAD\Salami4UA\INacionalidadCAD.cs" />
+	<Compile Include="CAD\Salami4UA\NacionalidadCAD.cs" />
+	<Compile Include="EN\Salami4UA\AlturaEN.cs" />
+	<Compile Include="CEN\Salami4UA\AlturaCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IAlturaCAD.cs" />
+	<Compile Include="CAD\Salami4UA\AlturaCAD.cs" />
+	<Compile Include="EN\Salami4UA\CarreraEN.cs" />
+	<Compile Include="CEN\Salami4UA\CarreraCEN.cs" />
+	<Compile Include="CAD\Salami4UA\ICarreraCAD.cs" />
+	<Compile Include="CAD\Salami4UA\CarreraCAD.cs" />
+	<Compile Include="EN\Salami4UA\MensajesEN.cs" />
+	<Compile Include="CEN\Salami4UA\MensajesCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IMensajesCAD.cs" />
+	<Compile Include="CAD\Salami4UA\MensajesCAD.cs" />
+	<Compile Include="EN\Salami4UA\MasterEN.cs" />
+	<Compile Include="CEN\Salami4UA\MasterCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IMasterCAD.cs" />
+	<Compile Include="CAD\Salami4UA\MasterCAD.cs" />
+	<Compile Include="EN\Salami4UA\AnimalesEN.cs" />
+	<Compile Include="CEN\Salami4UA\AnimalesCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IAnimalesCAD.cs" />
+	<Compile Include="CAD\Salami4UA\AnimalesCAD.cs" />
+			<Compile Include="CEN\Salami4UA\AnimalesCEN_DameAnimalesPorUsuario.cs" />
+	<Compile Include="EN\Salami4UA\GustosEN.cs" />
+	<Compile Include="CEN\Salami4UA\GustosCEN.cs" />
+	<Compile Include="CAD\Salami4UA\IGustosCAD.cs" />
+	<Compile Include="CAD\Salami4UA\GustosCAD.cs" />
+	<Compile Include="Enumerated\Salami4UA\HairColorEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\EyeColorEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\HairStyleEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\HairLengthEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\BodyTypeEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\EthnicityEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\ReligionEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\SmokeEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\GenderEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\LikesEnum.cs" />
+	<Compile Include="Enumerated\Salami4UA\CourseEnum.cs" />
+	
+	
+
+		    
+	
+
+		    <Compile Include="Properties\AssemblyInfo.cs" />
+		    <Compile Include="Properties\Settings.Designer.cs">
+		      <AutoGen>True</AutoGen>
+		      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+		      <DependentUpon>Settings.settings</DependentUpon>
+		    </Compile>
+		  </ItemGroup>
+		  <ItemGroup>
+		  
+	<EmbeddedResource Include="Mappings\Salami4UA\usuario.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\aficiones.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\deportes.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\musicas.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\cines.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\caracteristicas.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\nacionalidad.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\altura.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\carrera.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\mensajes.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\master.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\animales.hbm.xml" />
+	<EmbeddedResource Include="Mappings\Salami4UA\gustos.hbm.xml" />
+	
+	
+
+		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="hibernate.cfg.xml">
+		      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		    </Content>
+		  </ItemGroup>
+		  <ItemGroup>
+		    <Content Include="AppLib\Antlr3.Runtime.dll" />
+		    <Content Include="AppLib\Castle.DynamicProxy2.dll" />
+		    <Content Include="AppLib\Iesi.Collections.dll" />
+		    <Content Include="AppLib\LinFu.DynamicProxy.dll" />
+		    <Content Include="AppLib\log4net.dll" />
+		    <Content Include="AppLib\NHibernate.ByteCode.Castle.dll" />
+		    <Content Include="AppLib\NHibernate.ByteCode.LinFu.dll" />
+		    <Content Include="AppLib\NHibernate.dll" />
+		    <Content Include="AppLib\nunit.core.dll" />
+		    <Content Include="AppLib\nunit.framework.dll" />
+  		  </ItemGroup>
+		  <ItemGroup>
+		    <None Include="app.config" />
+		    <None Include="Properties\Settings.settings">
+		      <Generator>SettingsSingleFileGenerator</Generator>
+		      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+		    </None>
+		        <None Include="Resources\xsd\nhibernate-configuration.xsd">
+      			<SubType>Designer</SubType>
+    		</None>
+    		<None Include="Resources\xsd\nhibernate-mapping.xsd">
+      			<SubType>Designer</SubType>
+    		</None>
+		  </ItemGroup>
+		  <ItemGroup>
+		    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework Client Profile</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.5</ProductName>
+		      <Install>false</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+		      <Visible>False</Visible>
+		      <ProductName>.NET Framework 3.5 SP1</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.SQL.Server.Compact.3.5">
+		      <Visible>False</Visible>
+		      <ProductName>SQL Server Compact 3.5</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+		      <Visible>False</Visible>
+		      <ProductName>Windows Installer 3.1</ProductName>
+		      <Install>true</Install>
+		    </BootstrapperPackage>
+		  </ItemGroup>
+		  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+		  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+		       Other similar extension points exist, see Microsoft.Common.targets.
+		  <Target Name="BeforeBuild">
+		  </Target>
+		  <Target Name="AfterBuild">
+		  </Target>
+		  -->
+		</Project>

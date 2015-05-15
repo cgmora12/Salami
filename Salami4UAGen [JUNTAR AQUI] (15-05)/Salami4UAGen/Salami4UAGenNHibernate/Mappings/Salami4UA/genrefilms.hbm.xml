@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+		<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+		                   assembly="Salami4UAGenNHibernate"
+		                   namespace="Salami4UAGenNHibernate.EN.Salami4UA">
+			<class name="GenreFilmsEN" table="[GenreFilms]">
+						<id name="Name" column="[Name]"/>
+			
+					
+		
+		  </class>
+		  
+		  <query name="GenreFilmsENReadAllHQL">from GenreFilmsEN</query>
+		  <query name="GenreFilmsENdameTodosLosGenerosCineHQL"><![CDATA[FROM GenreFilmsEN]]></query>
+		</hibernate-mapping>
+	
